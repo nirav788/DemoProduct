@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.demoproduct.com.Activity.SignupActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <app.demoproduct.com.Utills.CustomTextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:gravity="left"
+                    android:text="Sign Up"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/_20sdp"
+                    app:typeface="psb.ttf" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you have an account?"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:id="@+id/signUpForFreeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/login_Now"
+                        android:textColor="@color/icons"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:typeface="psb.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_Fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="First Name"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomEditTextView
+                        android:id="@+id/edt_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your first name "
+                        android:inputType="text"
+                        app:typeface="pr.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/icons" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_Lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Last Name"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomEditTextView
+                        android:id="@+id/edt_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your last name "
+                        android:inputType="text"
+                        app:typeface="pr.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/icons" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Mobile Number"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomEditTextView
+                        android:id="@+id/edt_mnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your mobile number "
+                        android:inputType="number"
+                        app:typeface="pr.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/icons" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Email"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomEditTextView
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your email or mobile number "
+                        android:inputType="textEmailAddress"
+                        app:typeface="pr.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/icons" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Password"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        app:typeface="pr.ttf" />
+
+                    <app.demoproduct.com.Utills.CustomEditTextView
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Enter your password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="0dp"
+                        app:typeface="pr.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/icons" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_SubmitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:layout_marginBottom="@dimen/_30sdp">
+
+                    <app.demoproduct.com.Utills.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_14sdp"
+                        app:typeface="psb.ttf" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+        s
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

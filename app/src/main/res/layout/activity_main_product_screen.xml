@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.demoproduct.com.Activity.MainProductScreenActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_add_product"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/white_button_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_shopping_bag_s" />
+
+                <app.demoproduct.com.Utills.CustomTextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="Add New Item"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="pm.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_view_product"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/white_button_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_tag" />
+
+                <app.demoproduct.com.Utills.CustomTextView
+                    android:id="@+id/tv_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="View All Item"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_12sdp"
+                    app:typeface="pm.ttf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

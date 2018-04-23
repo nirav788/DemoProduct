@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="app.demoproduct.com.Activity.AddNewItemActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <app.demoproduct.com.Utills.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="Add New Item"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/_16sdp"
+                                app:typeface="pm.ttf" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_180sdp"
+                            android:layout_gravity="center">
+
+                            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/iv_uploadpic"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_cloud_computing"
+                                app:riv_border_color="@color/colorPrimaryDark"
+                                app:riv_border_width="2dip"
+                                app:riv_corner_radius="30dip"
+                                app:riv_mutate_background="true"
+                                app:riv_oval="true" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/img_select"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_50sdp"
+                                android:background="@color/icons"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_create_black_24dp"
+                                app:riv_corner_radius="30dip"
+                                app:riv_mutate_background="true"
+                                app:riv_oval="true" />
+
+
+                            <app.demoproduct.com.Utills.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_160sdp"
+                                android:gravity="center"
+                                android:text="Upload Product Image"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/_14sdp"
+                                app:typeface="pm.ttf" />
+
+
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lin_product_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Product Name "
+                                    android:textColor="@color/icons"
+                                    android:textStyle="bold"
+                                    app:typeface="pr.ttf" />
+
+                                <app.demoproduct.com.Utills.CustomEditTextView
+                                    android:id="@+id/edt_productname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Enter your product name"
+                                    android:inputType="textEmailAddress"
+                                    android:textColorHint="@color/divider"
+                                    app:typeface="pr.ttf" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/icons" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_product_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Product Description "
+                                    android:textColor="@color/icons"
+                                    android:textStyle="bold"
+                                    app:typeface="pr.ttf" />
+
+                                <app.demoproduct.com.Utills.CustomEditTextView
+                                    android:id="@+id/edt_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="left|top"
+                                    android:hint="Enter your product description"
+                                    android:inputType="text"
+                                    android:maxLines="3"
+                                    android:minLines="2"
+                                    android:textColorHint="@color/divider"
+                                    app:typeface="pr.ttf" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/icons" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Select Branch"
+                                    android:textColor="@color/icons"
+                                    android:textStyle="bold"
+                                    app:typeface="pr.ttf" />
+
+
+                                <Spinner
+                                    android:id="@+id/sp_branch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/array_branch"
+                                    android:textColor="@color/icons"></Spinner>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/icons" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lin_qty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Select number of quantity"
+                                    android:textColor="@color/icons"
+                                    android:textStyle="bold"
+                                    app:typeface="pr.ttf" />
+
+
+                                <Spinner
+                                    android:id="@+id/sp_qty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/array_qty"
+                                    android:textColor="@color/icons"></Spinner>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/icons" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_background"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_9sdp">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Cancle"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/_14sdp"
+                                    app:typeface="pm.ttf" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_save"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_margin="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_background"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_9sdp">
+
+                                <app.demoproduct.com.Utills.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Save"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/_13sdp"
+                                    app:typeface="pm.ttf" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

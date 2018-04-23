@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DemoProduct</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="signup_for_free"><u>Sign up for free</u></string>
+    <string name="forget_password"><u>Forget Password ?</u></string>
+    <string name="login_Now">Login Now</string>
+    <string name="sign_up">Sign Up Now</string>
+    <string name="check_connection">No internet connection</string>
+    <string name="pleasewait">Please wait...</string>
+    <string name="server_connection_problem">Server Connection problem</string>
+
+    <string-array name="array_branch">
+        <item>Please Select any branch</item>
+        <item>Surat</item>
+        <item>Bardoli</item>
+        <item>Navsari</item>
+        <item>Vapi</item>
+        <item>Vasai</item>
+        <item>Mumbai</item>
+    </string-array>
+    <string-array name="array_qty">
+        <item>Please Select Quantity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="need_permission">App Need Camera and Storage Permissions, Allow it.</string>
+
+</resources>
